@@ -167,6 +167,7 @@ img {
 
 .nav-toggle:hover {
   color: var(--first-color);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -324,6 +325,15 @@ img {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
+}
+
+.button--white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button--white:hover {
+  background-color: var(--container-color);
 }
 
 .button--flex {
@@ -659,14 +669,184 @@ img {
 
 /*==================== PORTFOLIO ====================*/
 
-/*==================== PROJECT IN MIND ====================*/
+.portfolio-container {
+  overflow: initial;
+}
 
+.portfolio-content {
+  padding: 0 1.5rem;
+}
+
+.portfolio-img {
+  width: 265px;
+  border-radius: 0.5rem;
+  justify-self: center;
+}
+
+.portfolio-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.portfolio-description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.portfolio-button:hover .button-icon {
+  transform: translateX(0.25rem);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+.swiper-button-prev {
+  left: -0.5rem;
+}
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+
+/*==================== PROJECT IN MIND ====================*/
+.project-bg {
+  background-color: var(--first-color);
+  padding-top: 3rem;
+}
+
+.project.title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project-title,
+.project-description {
+  color: #fff;
+}
+
+.project-img {
+  width: 232px;
+  justify-self: center;
+}
 /*==================== TESTIMONIAL ====================*/
 
 /*==================== CONTACT ME ====================*/
+.contact-container {
+  row-gap: 3rem;
+}
+
+.contact-information {
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact-subtitle {
+  font-size: var(--h3-font-size);
+  color: var(--text-color-light);
+}
+
+.contact-content {
+  background-color: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact-label {
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+}
+
+.contact-input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-color);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rem 0.5rem 0.5rem 0;
+}
 
 /*==================== FOOTER ====================*/
+.footer {
+  padding-top: 2rem;
+}
 
+.footer-bg {
+  background-color: var(--first-color);
+  padding: 2rem 0 3rem;
+}
+
+.footer-title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer-subtitle {
+  font-size: var(--small-font-size);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer-link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer-social {
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer-social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer-copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer-title,
+.footer-subtitle,
+.footer-link,
+.footer-social {
+  color: #fff;
+}
 /*========== SCROLL UP ==========*/
 
 /* Show scroll */
