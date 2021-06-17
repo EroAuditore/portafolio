@@ -167,6 +167,7 @@ img {
 
 .nav-toggle:hover {
   color: var(--first-color);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -808,6 +809,43 @@ img {
 .footer-title {
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-25);
+}
+
+.footer-subtitle {
+  font-size: var(--small-font-size);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer-link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer-social {
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer-social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer-copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer-title,
+.footer-subtitle,
+.footer-link,
+.footer-social {
+  color: #fff;
 }
 /*========== SCROLL UP ==========*/
 
